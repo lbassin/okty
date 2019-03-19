@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ContainerConfigField } from '../../../models/container';
 
 @Component({
-  templateUrl: './void.component.html',
-  styleUrls: ['./void.component.scss']
+    templateUrl: './void.component.html',
+    styleUrls: ['./void.component.scss']
 })
 export class VoidComponent implements OnInit {
 
-  constructor() { }
+    @Input() field: ContainerConfigField;
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }
